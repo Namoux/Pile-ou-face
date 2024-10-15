@@ -29,42 +29,69 @@ int main () {
     if (reponse == 1) {
         printf("Vous faites Pile !\n");
         printf("La pièce est jetée...\n");
+            srand(time(NULL));
+            float from = 1;
+            float to = 2;
+
+            int random = (float)rand()/RAND_MAX * (to-from+1) + from;
+
+            if (random == 1) { 
+                printf("PILE!\n");
+                    if (random == reponse) { 
+                        printf("C'est GAGNé, bien joué !\n");
+                         printf("\n");
+                    } else { 
+                        printf("C'est PERDU, dommage...\n"); 
+                         printf("\n");
+                    }
+            } 
+
+            if (random == 2) { 
+                printf("FACE!\n");
+                    if (random == reponse) { 
+                         printf("C'est GAGNé, bien joué !\n");
+                         printf("\n");
+                    } else { 
+                        printf("C'est PERDU, dommage...\n"); 
+                        printf("\n");
+                    }
+            }
+
     } else if (reponse == 2) {
         printf("Vous faites Face !\n");
         printf("La pièce est jetée...\n");
+            srand(time(NULL));
+            float from = 1;
+            float to = 2;
+
+            int random = (float)rand()/RAND_MAX * (to-from+1) + from;
+
+            if (random == 1) { 
+                printf("PILE!\n");
+                    if (random == reponse) { 
+                        printf("C'est GAGNé, bien joué !\n");
+                        printf("\n");
+                    } else { 
+                        printf("C'est PERDU, dommage...\n"); 
+                        printf("\n");
+                    }
+            } 
+            
+            if (random == 2) { 
+                printf("FACE!\n");
+                    if (random == reponse) { 
+                        printf("C'est GAGNé, bien joué !\n");
+                        printf("\n");
+                    } else { 
+                        printf("C'est PERDU, dommage...\n"); 
+                        printf("\n");
+                    }
+            }
+
     } else if (reponse == 0) {
         printf("Vous quittez le jeu.\n");
         printf("########### GAME OVER ###########\n");
     }
-
-
-    srand(time(NULL));
-    float from = 1;
-    float to = 2;
-
-        int random = (float)rand()/RAND_MAX * (to-from+1) + from;
-
-        if (random == 1) { 
-            printf("PILE!\n");
-                if (random == reponse) { 
-                    printf("C'est GAGNé, bien joué !\n");
-                    printf("\n");
-                } else { 
-                    printf("C'est PERDU, dommage...\n"); 
-                    printf("\n");
-                  }
-        } 
-        
-        if (random == 2) { 
-            printf("FACE!\n");
-                if (random == reponse) { 
-                    printf("C'est GAGNé, bien joué !\n");
-                    printf("\n");
-                } else { 
-                    printf("C'est PERDU, dommage...\n"); 
-                    printf("\n");
-                  }
-        }
 
 return 0;
 }

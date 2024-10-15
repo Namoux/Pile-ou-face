@@ -5,17 +5,17 @@
 #include <unistd.h>
 #define BUF_SIZE 255
 
-
 int main () {
 
     char buf[BUF_SIZE];
     memset(buf, 0, BUF_SIZE);
-
+    int reponse = 0;
 
     //titre du jeu
     printf("######## Pile ou Face ########\n");
     printf("\n");
 
+do {
     printf("Pile ou face ?\n"); 
     printf("1. Pile\n");
     printf("2. Face\n");
@@ -24,8 +24,8 @@ int main () {
 
     fgets(buf, BUF_SIZE, stdin);
     buf[strlen(buf)-1] = 0;
-
-    int reponse = atoi(buf);
+    reponse = atoi(buf);
+    
 
     if (reponse == 1) {
         printf("Vous faites Pile !\n");
@@ -107,6 +107,8 @@ int main () {
         printf("Vous quittez le jeu.\n");
         printf("########### GAME OVER ###########\n");
     }
+
+} while (reponse !=0);
 
 return 0;
 }

@@ -5,7 +5,6 @@
 #include <unistd.h>
 #define BUF_SIZE 255
 
-
 int main () {
 
     char buf[BUF_SIZE];
@@ -19,6 +18,7 @@ int main () {
     printf("\n");
 
     do {
+        printf("\n");
         printf("Pile ou face ?\n"); 
         printf("1. Pile\n");
         printf("2. Face\n");
@@ -29,7 +29,6 @@ int main () {
         buf[strlen(buf)-1] = 0;
         reponse = atoi(buf);
         
-
         if (reponse == 1) {
             printf("Vous faites Pile !\n");
             printf("La pièce est jetée");
@@ -116,7 +115,6 @@ int main () {
 
         } else if (reponse == 0) {
             printf("Vous quittez le jeu.\n");
-            printf("########### GAME OVER ###########\n");
         }
 
         if (reussite <= 1) {
@@ -127,14 +125,17 @@ int main () {
         printf("Echec : %d\n", echec);
         } else { printf("Echecs : %d\n", echec); }
 
-        printf("|-------------------------------|\n");
         printf("\n");
+        printf("|-------------------------------|\n");
 
-        if (echec == 10 ) {
+        if (echec == 10) {
+            printf("########### GAME OVER ###########\n");
+        }
+        if (reponse == 0) {
             printf("########### GAME OVER ###########\n");
         }
 
-    } while (reponse !=0 && echec < 10);
+    } while (reponse!= 0 && echec < 10);
 
     return 0;
 }

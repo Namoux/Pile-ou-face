@@ -2,27 +2,29 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-#define BUF_SIZE 2
+#define BUF_SIZE 255
 
 
 int main () {
 
     char buf[BUF_SIZE];
-    int reponse = atoi(buf);
+    memset(buf, 0, BUF_SIZE);
+
 
     //titre du jeu
     printf("######## Pile ou Face ########\n");
     printf("\n");
 
-
-    do {
     printf("Pile ou face ?\n"); 
     printf("1. Pile\n");
     printf("2. Face\n");
     printf("0. Quitter le jeu\n");
     printf("\n");
 
-        fgets(buf, BUF_SIZE, stdin);
+    fgets(buf, BUF_SIZE, stdin);
+    buf[strlen(buf)-1] = 0;
+
+    int reponse = atoi(buf);
 
     if (reponse == 1) {
         printf("Vous faites Pile !\n");
@@ -63,8 +65,6 @@ int main () {
                     printf("\n");
                   }
         }
-
-    } while (reponse = 1 || 2);
 
 return 0;
 }

@@ -2,7 +2,9 @@ Bonjour à tous,
 
 Présentation personnelle : Je m'appelle Nam, et je suis actuellement en formation DWWM.
 
-Synopsis : Je vais vous présenter mon projet qui consiste en un jeu simple et amusant : "Pile ou Face". L'objectif de ce projet était de créer une application interactive où les utilisateurs peuvent deviner le résultat d'un lancer de pièce.
+Synopsis : Je vais vous présenter mon projet qui consiste en un jeu simple et amusant : "Pile ou Face". 
+L'objectif de ce projet était de créer une application interactive où les utilisateurs peuvent deviner 
+le résultat d'un lancer de pièce.
 
 Cas d'utilisation : Avec mon application "Pile ou Face", l'utilisateur peut :
 
@@ -28,7 +30,8 @@ Code : Le projet se compose principalement de deux parties :
 
     La fonction saisie() :
 
-        Elle gère les entrées de l'utilisateur, vérifie les choix et traite les saisies en majuscules et minuscules.
+        Elle gère les entrées de l'utilisateur, vérifie les choix et traite les saisies 
+        en majuscules et minuscules.
 
     La fonction main() :
 
@@ -46,4 +49,5 @@ Améliorations futures : Pour les futures versions de ce projet, je prévois les
 
     Utiliser plus de fonctions pour eviter de surcharger le main.
 
-Au revoir : Voilà, c'était la présentation de mon projet "Pile ou Face". Merci de m'avoir écouté et je suis prêt à répondre à vos questions.
+Au revoir : Voilà, c'était la présentation de mon projet "Pile ou Face". 
+Merci de m'avoir écouté et je suis prêt à répondre à vos questions.

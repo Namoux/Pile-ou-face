@@ -6,7 +6,7 @@
 #define BUF_SIZE 255
 
 // Fonction conversion en minuscules
-void conversmajmin(char *str) { 
+void conversmajmin(char*  str) { 
     for (int i = 0; i < strlen(str); i++) {
         if (str[i] >= 65 && str[i] <= 90) {
             str[i] = str[i] + 32;  
@@ -36,7 +36,7 @@ int saisie() {
     }
 
     // Conversion de la chaîne en minuscules
-    conversmajmin(buf);
+    //conversmajmin(buf);
 
     // Comparaison de l'entrée et conversion valeur en int 
     if (strcmp(buf, "pile") == 0 || strcmp(buf, "p") == 0) {
@@ -156,11 +156,11 @@ int main () {
         }
             // singulier pluriel
         if (reussite <= 1) {
-        printf("Réussite : %d\n", reussite);
+            printf("Réussite : %d\n", reussite);
         } else { printf("Réussites : %d\n", reussite); }
         
         if (echec <= 1) {
-        printf("Echec : %d\n", echec);
+            printf("Echec : %d\n", echec);
         } else { printf("Echecs : %d\n", echec); }
 
         printf("\n");

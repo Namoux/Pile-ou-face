@@ -6,6 +6,8 @@ Synopsis : Je vais vous présenter mon projet qui consiste en un jeu simple et a
 L'objectif de ce projet était de créer une application interactive où les utilisateurs peuvent deviner 
 le résultat d'un lancer de pièce.
 
+Il y a 2 applications, 1 codée en langage C et 1 en python
+
 Cas d'utilisation : Avec mon application "Pile ou Face", l'utilisateur peut :
 
     Choisir entre "Pile" et "Face".
